@@ -140,6 +140,10 @@ class ComposerStaticInit3ba5865ee439cf319452b0df1a1dfb7c
         ),
     );
 
+    public static $fallbackDirsPsr4 = array (
+        0 => __DIR__ . '/../..' . '/src',
+    );
+
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'Normalizer' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/Resources/stubs/Normalizer.php',
@@ -151,6 +155,7 @@ class ComposerStaticInit3ba5865ee439cf319452b0df1a1dfb7c
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit3ba5865ee439cf319452b0df1a1dfb7c::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit3ba5865ee439cf319452b0df1a1dfb7c::$prefixDirsPsr4;
+            $loader->fallbackDirsPsr4 = ComposerStaticInit3ba5865ee439cf319452b0df1a1dfb7c::$fallbackDirsPsr4;
             $loader->classMap = ComposerStaticInit3ba5865ee439cf319452b0df1a1dfb7c::$classMap;
 
         }, null, ClassLoader::class);
