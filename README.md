@@ -1,1 +1,1 @@
-# my-training-list
+# My Training List
